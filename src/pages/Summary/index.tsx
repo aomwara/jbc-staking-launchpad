@@ -137,8 +137,8 @@ const _SummaryPage = ({
               <FormattedMessage defaultMessage="Total amount required" />
             </Text>
             <InfoBox>
-              {amountValidators.times(convertedPrice).toString()}
-              {TICKER_NAME}
+              {amountValidators.times(convertedPrice).toString() + ' '}
+              JBC
             </InfoBox>
           </Container>
         </Box>
@@ -190,14 +190,14 @@ const _SummaryPage = ({
           instead of the official deposit contract. Make sure that the
           address you are sending the transaction to is the correct address."
             values={{
-              pricePerValidator: `${PRICE_PER_VALIDATOR} ${TICKER_NAME}`,
+              pricePerValidator: `${PRICE_PER_VALIDATOR} JBC`,
             }}
           />
         </Text>
         <Row>
           <Link
             isTextLink={false}
-            to="https://ethereum.org/en/staking/deposit-contract/"
+            to="https://exp-l1.jibchain.net/address/0xe9364471539cD35D1911f844914c7DaBf7aeE92D/contracts#address-tabs"
             primary
           >
             <Button
@@ -207,9 +207,9 @@ const _SummaryPage = ({
               })}
             />
           </Link>
-          <Link shouldOpenNewTab to={routesEnum.phishingPage} primary>
+          {/* <Link shouldOpenNewTab to={routesEnum.phishingPage} primary>
             <FormattedMessage defaultMessage="More on phishing" />
-          </Link>
+          </Link> */}
         </Row>
         <span className="mt20">
           <CheckBox
@@ -218,7 +218,7 @@ const _SummaryPage = ({
             label={
               <Text>
                 <FormattedMessage
-                  defaultMessage="I know how to check that I am sending my {TICKER_NAME} into the
+                  defaultMessage="I know how to check that I am sending my JBC into the
                 correct deposit contract and will do so."
                   values={{ TICKER_NAME }}
                 />
@@ -265,7 +265,7 @@ const _SummaryPage = ({
                   })}
                 </em>
               ),
-              eth: `${PRICE_PER_VALIDATOR} ${TICKER_NAME}`,
+              eth: `${PRICE_PER_VALIDATOR} JBC`,
             }}
           />
         </Text>
@@ -297,7 +297,7 @@ const _SummaryPage = ({
             label={
               <Text>
                 <FormattedMessage
-                  defaultMessage="I understand that there is no advantage to depositing more than once per validator. Any extra {TICKER_NAME} sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
+                  defaultMessage="I understand that there is no advantage to depositing more than once per validator. Any extra JBC sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
                   values={{ TICKER_NAME }}
                 />
               </Text>
@@ -315,7 +315,6 @@ const _SummaryPage = ({
         <Link to={routesEnum.transactionsPage} onClick={handleSubmit}>
           <Button
             width={300}
-            rainbow
             disabled={!allChecked}
             label={formatMessage({ defaultMessage: 'Continue' })}
           />

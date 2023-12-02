@@ -45,6 +45,9 @@
   "/5Hyyf": {
     "message": "Indonesian"
   },
+  "/5mBs2": {
+    "message": "I understand that there is no advantage to depositing more than once per validator. Any extra JBC sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
+  },
   "/JiR8D": {
     "message": "On a never-ending loop, every single validator account is continuously evaluated for eligible ETH withdrawals (of which there are two types, more on this below). Validators are processed in order by index number, originally starting at 0, with each subsequent proposer picking up where the last one left off."
   },
@@ -288,9 +291,6 @@
   },
   "38VH2G": {
     "message": "Install deposit-cli tool"
-  },
-  "3CRtg8": {
-    "message": "You do not have enough {eth} in this account for {numberOfValidators} {validator}"
   },
   "3GbrWR": {
     "message": "Why do rewards depend on the total number of validators in the network?"
@@ -743,9 +743,6 @@
   },
   "CT+gEC": {
     "message": "Upload to Beacon Node {btec} pool"
-  },
-  "CWKE9c": {
-    "message": "Your wallet is on the wrong network. Switch to {executionLayerName}"
   },
   "Cacfkx": {
     "message": "More on the Ethereum vision"
@@ -1240,6 +1237,9 @@
   },
   "Mc8nNE": {
     "message": "Transaction failed"
+  },
+  "Mg63Yp": {
+    "message": "Connect {wallet} to JBC Network"
   },
   "Mlc7Vr": {
     "message": "The Ethereum upgrades will only be successful if validators understand the risks and responsibilities."
@@ -1736,9 +1736,6 @@
     "description": "this is used as a command line flag",
     "message": "eth1_withdrawal_address"
   },
-  "Y07Hwy": {
-    "message": "Connect {wallet} to {executionLayerName}"
-  },
   "Y47aYU": {
     "message": "Top up"
   },
@@ -1853,6 +1850,9 @@
   },
   "aXT3iO": {
     "message": "Nimbus is Apache 2 licensed and written in Nim, a language with Python-like syntax that compiles to C."
+  },
+  "aZiB44": {
+    "message": "I know how to check that I am sending my JBC into the correct deposit contract and will do so."
   },
   "acrOoz": {
     "message": "Continue"
@@ -2200,6 +2200,9 @@
   "hzsgQ5": {
     "message": "These are also referred to as “partial withdrawals” or “reward payments” as the remaining {PRICE_PER_VALIDATOR} {TICKER_NAME} stays locked and staked."
   },
+  "iAj3dh": {
+    "message": "You do not have enough JBC in this account for {numberOfValidators} {validator}"
+  },
   "iFWLYC": {
     "message": "You can think of the deposit contract as a transfer of funds from an Ethereum account to a proof-of-stake validator account."
   },
@@ -2366,9 +2369,6 @@
   "l3ztMu": {
     "message": "As of {date}, you'll need ~1TB for the Mainnet execution chain data alone (growing at >1GB/day)."
   },
-  "l4nLft": {
-    "message": "I know how to check that I am sending my {TICKER_NAME} into the correct deposit contract and will do so."
-  },
   "l4sDVJ": {
     "message": "exit queue"
   },
@@ -2500,9 +2500,6 @@
   },
   "nW+xcT": {
     "message": "Erigon documentation"
-  },
-  "nZTFTz": {
-    "message": "I understand that there is no advantage to depositing more than once per validator. Any extra {TICKER_NAME} sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
   },
   "naHAvS": {
     "message": "Enabling withdrawals"
@@ -2638,9 +2635,6 @@
   "pXyH++": {
     "message": "The Besu documentation explains how to download and install the client."
   },
-  "pfJX2D": {
-    "message": "More on phishing"
-  },
   "plXBe0": {
     "message": "Alternative node tooling:"
   },
@@ -2747,6 +2741,9 @@
   },
   "rswUPu": {
     "message": "Launchpad summary"
+  },
+  "s4wh89": {
+    "message": "Your wallet is on the wrong network. Switch to JBC Network"
   },
   "s6gImC": {
     "message": "Teku can also be configured via a YAML file which is passed in via a few different ways."
@@ -2911,9 +2908,6 @@
   },
   "vY2wig": {
     "message": "Loading error"
-  },
-  "vYODEJ": {
-    "message": "Get {TICKER_NAME}"
   },
   "vYOWYI": {
     "message": "Chinese (simplified)"

@@ -370,16 +370,15 @@ const _UploadValidatorPage = ({
         </Dropzone>
       </Container>
       <PaddedButtonContainer>
-        <Link to={routesEnum.generateKeysPage}>
+        {/* <Link to={routesEnum.generateKeysPage}>
           <Button
             width={100}
             label={formatMessage({ defaultMessage: 'Back' })}
           />
-        </Link>
+        </Link> */}
         <Link to={routesEnum.connectWalletPage} onClick={handleSubmit}>
           <Button
             width={300}
-            rainbow
             disabled={!isFileAccepted}
             label={formatMessage({ defaultMessage: 'Continue' })}
           />

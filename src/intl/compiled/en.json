@@ -105,6 +105,12 @@
       "value": "Indonesian"
     }
   ],
+  "/5mBs2": [
+    {
+      "type": 0,
+      "value": "I understand that there is no advantage to depositing more than once per validator. Any extra JBC sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
+    }
+  ],
   "/JiR8D": [
     {
       "type": 0,
@@ -743,32 +749,6 @@
     {
       "type": 0,
       "value": "Install deposit-cli tool"
-    }
-  ],
-  "3CRtg8": [
-    {
-      "type": 0,
-      "value": "You do not have enough "
-    },
-    {
-      "type": 1,
-      "value": "eth"
-    },
-    {
-      "type": 0,
-      "value": " in this account for "
-    },
-    {
-      "type": 1,
-      "value": "numberOfValidators"
-    },
-    {
-      "type": 0,
-      "value": " "
-    },
-    {
-      "type": 1,
-      "value": "validator"
     }
   ],
   "3GbrWR": [
@@ -2007,16 +1987,6 @@
       "value": " pool"
     }
   ],
-  "CWKE9c": [
-    {
-      "type": 0,
-      "value": "Your wallet is on the wrong network. Switch to "
-    },
-    {
-      "type": 1,
-      "value": "executionLayerName"
-    }
-  ],
   "Cacfkx": [
     {
       "type": 0,
@@ -3205,6 +3175,20 @@
     {
       "type": 0,
       "value": "Transaction failed"
+    }
+  ],
+  "Mg63Yp": [
+    {
+      "type": 0,
+      "value": "Connect "
+    },
+    {
+      "type": 1,
+      "value": "wallet"
+    },
+    {
+      "type": 0,
+      "value": " to JBC Network"
     }
   ],
   "Mlc7Vr": [
@@ -4575,24 +4559,6 @@
       "value": "eth1_withdrawal_address"
     }
   ],
-  "Y07Hwy": [
-    {
-      "type": 0,
-      "value": "Connect "
-    },
-    {
-      "type": 1,
-      "value": "wallet"
-    },
-    {
-      "type": 0,
-      "value": " to "
-    },
-    {
-      "type": 1,
-      "value": "executionLayerName"
-    }
-  ],
   "Y47aYU": [
     {
       "type": 0,
@@ -4881,6 +4847,12 @@
     {
       "type": 0,
       "value": "Nimbus is Apache 2 licensed and written in Nim, a language with Python-like syntax that compiles to C."
+    }
+  ],
+  "aZiB44": [
+    {
+      "type": 0,
+      "value": "I know how to check that I am sending my JBC into the correct deposit contract and will do so."
     }
   ],
   "acrOoz": [
@@ -5803,6 +5775,24 @@
       "value": " stays locked and staked."
     }
   ],
+  "iAj3dh": [
+    {
+      "type": 0,
+      "value": "You do not have enough JBC in this account for "
+    },
+    {
+      "type": 1,
+      "value": "numberOfValidators"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "validator"
+    }
+  ],
   "iFWLYC": [
     {
       "type": 0,
@@ -6209,20 +6199,6 @@
       "value": ", you'll need ~1TB for the Mainnet execution chain data alone (growing at >1GB/day)."
     }
   ],
-  "l4nLft": [
-    {
-      "type": 0,
-      "value": "I know how to check that I am sending my "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " into the correct deposit contract and will do so."
-    }
-  ],
   "l4sDVJ": [
     {
       "type": 0,
@@ -6559,20 +6535,6 @@
     {
       "type": 0,
       "value": "Erigon documentation"
-    }
-  ],
-  "nZTFTz": [
-    {
-      "type": 0,
-      "value": "I understand that there is no advantage to depositing more than once per validator. Any extra "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
-    },
-    {
-      "type": 0,
-      "value": " sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
     }
   ],
   "naHAvS": [
@@ -6943,12 +6905,6 @@
       "value": "The Besu documentation explains how to download and install the client."
     }
   ],
-  "pfJX2D": [
-    {
-      "type": 0,
-      "value": "More on phishing"
-    }
-  ],
   "plXBe0": [
     {
       "type": 0,
@@ -7241,6 +7197,12 @@
     {
       "type": 0,
       "value": "Launchpad summary"
+    }
+  ],
+  "s4wh89": [
+    {
+      "type": 0,
+      "value": "Your wallet is on the wrong network. Switch to JBC Network"
     }
   ],
   "s6gImC": [
@@ -7729,16 +7691,6 @@
     {
       "type": 0,
       "value": "Loading error"
-    }
-  ],
-  "vYODEJ": [
-    {
-      "type": 0,
-      "value": "Get "
-    },
-    {
-      "type": 1,
-      "value": "TICKER_NAME"
     }
   ],
   "vYOWYI": [

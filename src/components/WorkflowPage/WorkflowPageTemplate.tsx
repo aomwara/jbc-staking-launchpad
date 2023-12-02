@@ -27,10 +27,6 @@ const Gutter = styled.div`
   justify-content: center;
 `;
 const Background = styled.div`
-  background-image: ${(p: { workflowStep: WorkflowStep }) =>
-    `linear-gradient(to bottom right, ${rainbowLightColors[p.workflowStep]}, ${
-      rainbowBGColors[p.workflowStep]
-    });`};
   min-height: 100vh;
 `;
 
@@ -72,7 +68,7 @@ const _WorkflowPageTemplate = ({
   const calculatedWorkflowStep: WorkflowStep = mapPathnameToWorkflowStep(path);
 
   return (
-    <Background workflowStep={calculatedWorkflowStep}>
+    <Background>
       <Helmet>
         <title>{title}</title>
         <meta property="og:title" content={title} />

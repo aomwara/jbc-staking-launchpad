@@ -288,13 +288,13 @@ const _ConnectWalletPage = ({
       !error &&
       (balance || balance === 0)
     ) {
-      setStatus(`${balance} ${TICKER_NAME}`);
+      setStatus(`${balance} JBC`);
     } else if (walletConnected && error) {
       setStatus(formatMessage({ defaultMessage: 'Error' }));
     } else if (!networkAllowed) {
       setStatus(
         formatMessage(
-          { defaultMessage: 'Connect {wallet} to {executionLayerName}' },
+          { defaultMessage: 'Connect {wallet} to JBC Network' },
           {
             wallet: getWalletName(walletProvider),
             executionLayerName,
@@ -374,7 +374,9 @@ const _ConnectWalletPage = ({
                     </Heading>
                   </Row>
                   <Text color={networkAllowed ? 'greenDark' : 'redMedium'}>
-                    {executionLayerName}
+                    {executionLayerName === 'Jbc testnet'
+                      ? 'JBC Network'
+                      : executionLayerName}
                   </Text>
                 </Network>
                 <div>
@@ -399,7 +401,7 @@ const _ConnectWalletPage = ({
                       {networkAllowed && lowBalance && (
                         <>
                           <FormattedMessage
-                            defaultMessage="You do not have enough {eth} in this account for
+                            defaultMessage="You do not have enough JBC in this account for
                           {numberOfValidators} {validator}"
                             values={{
                               numberOfValidators: depositKeys.length,
@@ -416,7 +418,7 @@ const _ConnectWalletPage = ({
                           />
                         </>
                       )}
-                      {!IS_MAINNET && lowBalance && (
+                      {/* {!IS_MAINNET && lowBalance && (
                         <FaucetLink to={FAUCET_URL} primary>
                           <FormattedMessage
                             defaultMessage="Get {TICKER_NAME}"
@@ -425,7 +427,7 @@ const _ConnectWalletPage = ({
                             }}
                           />
                         </FaucetLink>
-                      )}
+                      )} */}
                     </div>
                     <Alert
                       variant={withdrawalAddress ? 'warning' : 'error'}
@@ -474,7 +476,7 @@ const _ConnectWalletPage = ({
                   title="Metamask"
                   error={walletProvider === metamask ? error : undefined}
                 />
-                {!IS_NON_INFURA_TESTNET && (
+                {/* {!IS_NON_INFURA_TESTNET && (
                   <WalletButton
                     invalid={PORTIS_DAPP_ID === ''}
                     selectedWallet={selectedWallet}
@@ -495,7 +497,7 @@ const _ConnectWalletPage = ({
                     title="Fortmatic"
                     error={walletProvider === fortmatic ? error : undefined}
                   />
-                )}
+                )} */}
                 <MetamaskHardwareButton />
               </WalletButtonSubContainer>
             </Animated>
@@ -519,7 +521,7 @@ const _ConnectWalletPage = ({
       {isInvalidNetwork && (
         <div className="flex center mt20">
           <FormattedMessage
-            defaultMessage="Your wallet is on the wrong network. Switch to {executionLayerName}"
+            defaultMessage="Your wallet is on the wrong network. Switch to JBC Network"
             values={{ executionLayerName }}
           />
         </div>
@@ -545,7 +547,6 @@ const _ConnectWalletPage = ({
         <Link to={routesEnum.summaryPage} onClick={handleSubmit}>
           <Button
             width={300}
-            rainbow
             disabled={
               !walletProvider ||
               !walletConnected ||

@@ -4,6 +4,7 @@ import { FormNext } from 'grommet-icons';
 import { useIntl } from 'react-intl';
 import { rainbowColors } from '../../styles/styledComponentsTheme';
 import { WorkflowStep } from '../../store/actions/workflowActions';
+import { Text } from '../Text';
 
 const Container = styled.div`
   background-color: white;
@@ -24,7 +25,7 @@ const Step = styled.div`
     index: number;
     theme: any;
   }) => {
-    if (p.active) return rainbowColors[p.index];
+    if (p.active) return '#2b3587';
     return p.theme.gray.medium;
   }};
   font-weight: ${p => (p.active ? 600 : undefined)};
@@ -91,7 +92,7 @@ export const WorkflowProgressBar = ({ workflow }: Props): JSX.Element => {
             </Step>
             {i !== steps.length - 1 && (
               // @ts-ignore
-              <Arrow color={workflow === step ? rainbowColors[i] : undefined} />
+              <Arrow color={workflow === step ? '#2b3587' : undefined} />
             )}
           </div>
         ))}
