@@ -233,7 +233,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             <FormattedMessage defaultMessage="Deposit" />
           </BarLinkText>
         </Link>
-        <ValidatorDropdown
+        {/* <ValidatorDropdown
           className="secondary-link"
           label={
             <BarLinkText level={4} margin="none" active={isDropdownPage}>
@@ -268,7 +268,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
               </Box>
             </Box>
           }
-        />
+        /> */}
         <Link to={routesEnum.checklistPage} className="secondary-link">
           <BarLinkText
             level={4}
@@ -328,7 +328,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             <Language color="black" />
           </Link>
         )}
-        {mobile && (
+        {/* {mobile && (
           <ValidatorDropdown
             className="secondary-link"
             label={<Menu color="black" />}
@@ -400,7 +400,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
               </Card>
             }
           />
-        )}
+        )} */}
         {!mobile && (
           <ValidatorDropdown
             className="secondary-link"
@@ -413,7 +413,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             dropAlign={{ top: 'bottom', right: dropAlignInline }}
             dropContent={
               <Card>
-                <Box pad="small" className="mt0">
+                {/* <Box pad="small" className="mt0">
                   {!IS_MAINNET && (
                     <Text className="mb10">
                       <FormattedMessage defaultMessage="This is a test network ⚠️" />
@@ -424,8 +424,8 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                       defaultMessage="Switch to {oppositeNetwork} launchpad"
                       values={{ oppositeNetwork }}
                     />
-                  </DropdownLink>
-                </Box>
+                  </DropdownLink> */}
+                {/* </Box> */}
               </Card>
             }
           />

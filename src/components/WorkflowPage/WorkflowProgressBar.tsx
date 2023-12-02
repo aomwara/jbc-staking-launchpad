@@ -47,18 +47,18 @@ export const WorkflowProgressBar = ({ workflow }: Props): JSX.Element => {
   `;
 
   const steps: step[] = [
-    {
-      step: WorkflowStep.OVERVIEW,
-      text: formatMessage({ defaultMessage: 'Advisories' }),
-    },
-    {
-      step: WorkflowStep.SELECT_CLIENT,
-      text: formatMessage({ defaultMessage: 'Choose client' }),
-    },
-    {
-      step: WorkflowStep.GENERATE_KEY_PAIRS,
-      text: formatMessage({ defaultMessage: 'Generate keys' }),
-    },
+    // {
+    //   step: WorkflowStep.OVERVIEW,
+    //   text: formatMessage({ defaultMessage: 'Advisories' }),
+    // },
+    // {
+    //   step: WorkflowStep.SELECT_CLIENT,
+    //   text: formatMessage({ defaultMessage: 'Choose client' }),
+    // },
+    // {
+    //   step: WorkflowStep.GENERATE_KEY_PAIRS,
+    //   text: formatMessage({ defaultMessage: 'Generate keys' }),
+    // },
     {
       step: WorkflowStep.UPLOAD_VALIDATOR_FILE,
       text: formatMessage({ defaultMessage: 'Upload deposit data' }),

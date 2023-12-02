@@ -1,14 +1,14 @@
-import { ActionTypes } from './index';
+import { ActionTypes } from "./index";
 
 export enum WorkflowStep {
-  'OVERVIEW',
-  'SELECT_CLIENT',
-  'GENERATE_KEY_PAIRS',
-  'UPLOAD_VALIDATOR_FILE',
-  'CONNECT_WALLET',
-  'SUMMARY',
-  'TRANSACTION_SIGNING',
-  'CONGRATULATIONS',
+  "OVERVIEW",
+  "SELECT_CLIENT",
+  "GENERATE_KEY_PAIRS",
+  "UPLOAD_VALIDATOR_FILE",
+  "CONNECT_WALLET",
+  "SUMMARY",
+  "TRANSACTION_SIGNING",
+  "CONGRATULATIONS",
 }
 
 export interface UpdateWorkflowAction {

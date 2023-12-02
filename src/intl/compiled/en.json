@@ -1247,20 +1247,6 @@
       "value": " is not supported in offline mode."
     }
   ],
-  "7DFXQj": [
-    {
-      "type": 0,
-      "value": "Switch to "
-    },
-    {
-      "type": 1,
-      "value": "oppositeNetwork"
-    },
-    {
-      "type": 0,
-      "value": " launchpad"
-    }
-  ],
   "7FcGxU": [
     {
       "type": 0,
@@ -2251,12 +2237,6 @@
       "value": "5. Time to deposit"
     }
   ],
-  "EXLB88": [
-    {
-      "type": 0,
-      "value": "This is a test network ⚠️"
-    }
-  ],
   "EXt8Xd": [
     {
       "type": 0,
@@ -2443,12 +2423,6 @@
       "value": "Download master branch source code"
     }
   ],
-  "G8tAKU": [
-    {
-      "type": 0,
-      "value": "Choose client"
-    }
-  ],
   "GBXzeJ": [
     {
       "type": 0,
@@ -2489,12 +2463,6 @@
     {
       "type": 0,
       "value": "Documentation on running Lighthouse"
-    }
-  ],
-  "Gbo300": [
-    {
-      "type": 0,
-      "value": "Generate keys"
     }
   ],
   "Ge62/G": [
@@ -3299,12 +3267,6 @@
       "value": "Italian"
     }
   ],
-  "NLgogh": [
-    {
-      "type": 0,
-      "value": "Launchpad network:"
-    }
-  ],
   "NOTCV0": [
     {
       "type": 0,
@@ -3875,12 +3837,6 @@
       "value": "only way"
     }
   ],
-  "RE2MaJ": [
-    {
-      "type": 0,
-      "value": "Consensus clients"
-    }
-  ],
   "RGD1CX": [
     {
       "type": 0,
@@ -4147,12 +4103,6 @@
       "value": "This full withdraw of funds requires that a withdrawal address be set, and will be automatically transferred in the next validator sweep."
     }
   ],
-  "TMw9oz": [
-    {
-      "type": 0,
-      "value": "Visit this site on desktop to become a validator."
-    }
-  ],
   "TZtYuA": [
     {
       "type": 0,
@@ -4381,12 +4331,6 @@
     {
       "type": 0,
       "value": " secret, which is a secret key that is shared only between the two clients to authenticate one another. This shared JWT secret must be made available to each client (both execution and consensus clients) to allow them to communicate with one another properly."
-    }
-  ],
-  "VzGJkB": [
-    {
-      "type": 0,
-      "value": "Staker checklist"
     }
   ],
   "W10U1b": [
@@ -4749,12 +4693,6 @@
     {
       "type": 0,
       "value": "Oops! Double check validator index number and try again."
-    }
-  ],
-  "Yd6MEN": [
-    {
-      "type": 0,
-      "value": "Execution clients"
     }
   ],
   "YeJh+/": [
@@ -5871,12 +5809,6 @@
       "value": " stays locked and staked."
     }
   ],
-  "iCpuph": [
-    {
-      "type": 0,
-      "value": "Clients"
-    }
-  ],
   "iFWLYC": [
     {
       "type": 0,
@@ -5939,12 +5871,6 @@
     {
       "type": 0,
       "value": "Decompress the file you just downloaded"
-    }
-  ],
-  "idDbou": [
-    {
-      "type": 0,
-      "value": "Thinking about staking?"
     }
   ],
   "ie5fDg": [

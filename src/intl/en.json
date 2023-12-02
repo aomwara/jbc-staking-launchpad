@@ -443,9 +443,6 @@
   "793QlI": {
     "message": "{title} is not supported in offline mode."
   },
-  "7DFXQj": {
-    "message": "Switch to {oppositeNetwork} launchpad"
-  },
   "7FcGxU": {
     "description": "{executionLayer} is a link labeled 'execution client'. {consensusLayer} is a link labeled 'consensus client'",
     "message": "You need to run an {executionClient} as well as your {consensusClient}."
@@ -844,9 +841,6 @@
   "EThT2C": {
     "message": "5. Time to deposit"
   },
-  "EXLB88": {
-    "message": "This is a test network ⚠️"
-  },
   "EXt8Xd": {
     "message": "Stakers must provide a fee recipient address to their consensus client in order to receive transaction fee rewards. This is a normal Ethereum address that you're used to."
   },
@@ -917,9 +911,6 @@
   "G5IMoZ": {
     "message": "Download master branch source code"
   },
-  "G8tAKU": {
-    "message": "Choose client"
-  },
   "GBXzeJ": {
     "message": "Arguably the most impactful factor on rewards earned for validating transactions is the total amount of stake in the network. In other words, the total amount of validators. Depending on this figure the max annual return rate for a validator can be anywhere between 2 and 20%."
   },
@@ -940,9 +931,6 @@
   },
   "GadkjP": {
     "message": "Documentation on running Lighthouse"
-  },
-  "Gbo300": {
-    "message": "Generate keys"
   },
   "Ge62/G": {
     "message": "Excess balance withdrawals (partial withdrawals)"
@@ -1276,9 +1264,6 @@
   "NEmnAV": {
     "message": "Italian"
   },
-  "NLgogh": {
-    "message": "Launchpad network:"
-  },
   "NOTCV0": {
     "message": "Prometheus and Grafana monitor"
   },
@@ -1470,9 +1455,6 @@
   "RCGrka": {
     "message": "only way"
   },
-  "RE2MaJ": {
-    "message": "Consensus clients"
-  },
   "RGD1CX": {
     "message": "Four (4) validator exits are allowed per epoch, plus one (1) more for every 65,536 total active validators over 327,680. As of April 2023 this limit is eight (8), and will increase to nine (9) if/when the active validator count reaches 655,360."
   },
@@ -1573,9 +1555,6 @@
   "TKCr16": {
     "message": "This full withdraw of funds requires that a withdrawal address be set, and will be automatically transferred in the next validator sweep."
   },
-  "TMw9oz": {
-    "message": "Visit this site on desktop to become a validator."
-  },
   "TZtYuA": {
     "message": "The terms 'Eth1' and 'Eth2' have been deprecated with The Merge. Since successfully transitioning to proof-of-stake via The Merge, there are no longer two distinct Ethereum networks; there is only Ethereum."
   },
@@ -1664,9 +1643,6 @@
   },
   "Vm6cRY": {
     "message": "This communication is secured using a {jwt} secret, which is a secret key that is shared only between the two clients to authenticate one another. This shared JWT secret must be made available to each client (both execution and consensus clients) to allow them to communicate with one another properly."
-  },
-  "VzGJkB": {
-    "message": "Staker checklist"
   },
   "W10U1b": {
     "message": "Teku is Apache 2 licensed and written in Java, a language notable for its maturity and ubiquity."
@@ -1795,9 +1771,6 @@
   },
   "YZtVDX": {
     "message": "Oops! Double check validator index number and try again."
-  },
-  "Yd6MEN": {
-    "message": "Execution clients"
   },
   "YeJh+/": {
     "message": "By completing step one, you’ll enable withdrawals from your validator account. This will automatically trigger excess balance payments (partial withdrawals) to be processed, but this does not automatically unlock the rest of your funds, or trigger an exit from the network."
@@ -2229,9 +2202,6 @@
   "hzsgQ5": {
     "message": "These are also referred to as “partial withdrawals” or “reward payments” as the remaining {PRICE_PER_VALIDATOR} {TICKER_NAME} stays locked and staked."
   },
-  "iCpuph": {
-    "message": "Clients"
-  },
   "iFWLYC": {
     "message": "You can think of the deposit contract as a transfer of funds from an Ethereum account to a proof-of-stake validator account."
   },
@@ -2255,9 +2225,6 @@
   },
   "iZuIgB": {
     "message": "Decompress the file you just downloaded"
-  },
-  "idDbou": {
-    "message": "Thinking about staking?"
   },
   "ie5fDg": {
     "description": "{network} inserts the testnet name, only if on the testnet",

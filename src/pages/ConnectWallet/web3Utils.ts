@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import {
   InjectedConnector,
   InjectedConnector as MetamaskConnector,
-} from '@web3-react/injected-connector';
-import { PortisConnector } from '@web3-react/portis-connector';
-import { useWeb3React } from '@web3-react/core';
-import { FortmaticConnector } from './fortmaticConnector';
-import { web3ReactInterface } from './index';
+} from "@web3-react/injected-connector";
+import { PortisConnector } from "@web3-react/portis-connector";
+import { useWeb3React } from "@web3-react/core";
+import { FortmaticConnector } from "./fortmaticConnector";
+import { web3ReactInterface } from "./index";
 import {
   FORTMATIC_KEY,
   IS_MAINNET,
@@ -14,15 +14,16 @@ import {
   PORTIS_DAPP_ID,
   RPC_URL,
   TESTNET_LAUNCHPAD_NAME,
-} from '../../utils/envVars';
+} from "../../utils/envVars";
 
 export enum NetworkChainId {
-  'Mainnet' = 1,
-  'Ropsten' = 3,
-  'Goerli' = 5,
-  'Sepolia' = 11155111,
-  'Zhejiang' = 1337803,
-  'Holesky' = 17000,
+  "Mainnet" = 1,
+  "Ropsten" = 3,
+  "Goerli" = 5,
+  "Sepolia" = 11155111,
+  "Zhejiang" = 1337803,
+  "Holesky" = 17000,
+  "Jbc" = 8899,
 }
 
 export const NetworkChainIdDict: { [id: string]: number } = {
@@ -32,6 +33,7 @@ export const NetworkChainIdDict: { [id: string]: number } = {
   Sepolia: 11155111,
   Zhejiang: 1337803,
   Holesky: 17000,
+  Jbc: 8899,
 };
 
 /*
@@ -46,6 +48,7 @@ const supportedNetworks = [
   NetworkChainId.Sepolia,
   NetworkChainId.Zhejiang,
   NetworkChainId.Holesky,
+  NetworkChainId.Jbc,
 ];
 
 // FIXME: disabled Portis for now
@@ -56,15 +59,16 @@ const portisSupportedNetworks = [
 ];
 
 enum Testnet {
-  'Ropsten',
-  'Goerli',
-  'Sepolia',
-  'Zhejiang',
-  'Holesky',
+  "Ropsten",
+  "Goerli",
+  "Sepolia",
+  "Zhejiang",
+  "Holesky",
+  "Jbc",
 }
 
 enum Mainnet {
-  'Mainnet',
+  "Mainnet",
 }
 
 export const NetworkNameToChainId: { [key: string]: NetworkChainId } = {
@@ -73,6 +77,7 @@ export const NetworkNameToChainId: { [key: string]: NetworkChainId } = {
   Goerli: NetworkChainId.Goerli,
   Zhejiang: NetworkChainId.Zhejiang,
   Holesky: NetworkChainId.Holesky,
+  Jbc: NetworkChainId.Jbc,
 };
 
 export const TARGET_NETWORK_CHAIN_ID = IS_MAINNET
@@ -141,17 +146,17 @@ export function useMetamaskListener(suppress: boolean = false) {
         }
       };
 
-      ethereum.on('connect', connectToMetamask);
-      ethereum.on('chainChanged', connectToMetamask);
-      ethereum.on('accountsChanged', handleAccountsChanged);
-      ethereum.on('networkChanged', connectToMetamask);
+      ethereum.on("connect", connectToMetamask);
+      ethereum.on("chainChanged", connectToMetamask);
+      ethereum.on("accountsChanged", handleAccountsChanged);
+      ethereum.on("networkChanged", connectToMetamask);
 
       return () => {
         if (ethereum.removeListener) {
-          ethereum.removeListener('connect', connectToMetamask);
-          ethereum.removeListener('chainChanged', connectToMetamask);
-          ethereum.removeListener('accountsChanged', handleAccountsChanged);
-          ethereum.removeListener('networkChanged', connectToMetamask);
+          ethereum.removeListener("connect", connectToMetamask);
+          ethereum.removeListener("chainChanged", connectToMetamask);
+          ethereum.removeListener("accountsChanged", handleAccountsChanged);
+          ethereum.removeListener("networkChanged", connectToMetamask);
         }
       };
     }
