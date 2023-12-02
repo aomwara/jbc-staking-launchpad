@@ -99,9 +99,7 @@
     "*.{js,jsx,ts,tsx}": [
       "yarn extract",
       "yarn compile",
-      "git add src/intl/*",
-      "npx prettier --write '{,!(node_modules)/**/}*.{ts,tsx}'",
-      "yarn run eslint src --ext .js,.jsx,.ts,.tsx --fix-dry-run"
+      "git add src/intl/*"
     ]
   },
   "scripts": {
