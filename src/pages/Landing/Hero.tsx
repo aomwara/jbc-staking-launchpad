@@ -101,13 +101,13 @@ const StyledLeslieImgNode = styled.img`
   transform-origin: 0% 0%;
   @media screen and (min-width: 800px) {
     transform: translate3d(0, 0, 0);
-    margin: 0 -3rem 0 3rem;
+    margin: 0 3rem 0 3rem;
     max-width: 100%;
-    max-height: 510px;
+    max-height: 400px;
   }
   @media screen and (max-width: 800px) {
-    max-width: 220px;
-    margin: 30px auto;
+    max-width: 180px;
+    margin: 50px auto;
     display: block;
   }
 `;
@@ -135,11 +135,7 @@ const ButtonContainer = styled.div`
 const LeslieImage: React.FC<{ style?: React.CSSProperties }> = ({ style }) => (
   <div>
     <ScrollAnimation animateIn="fadeIn" delay={750} animateOnce>
-      <StyledLeslieImgNode
-        src={JBCPNG}
-        alt="Leslie the Rhino - Ethereum staking mascot"
-        {...{ style }}
-      />
+      <StyledLeslieImgNode src={JBCPNG} alt="JBC logo" {...{ style }} />
     </ScrollAnimation>
   </div>
 );
@@ -168,7 +164,7 @@ export const Hero = () => {
                             <FormattedMessage defaultMessage="Staking Launchpad" />
                           ) : (
                             <FormattedMessage
-                              defaultMessage="Staking Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
+                              defaultMessage="Staking Launchpad for JBC Network"
                               values={{ TESTNET_LAUNCHPAD_NAME }}
                             />
                           )}

@@ -1334,6 +1334,9 @@
   "OdYQYh": {
     "message": "More on ConsenSys"
   },
+  "Oiy6J2": {
+    "message": "Staking Launchpad for JBC Network"
+  },
   "OmAmmi": {
     "message": "More on the Merge"
   },
@@ -2194,6 +2197,9 @@
   "iAj3dh": {
     "message": "You do not have enough JBC in this account for {numberOfValidators} {validator}"
   },
+  "iCpuph": {
+    "message": "Clients"
+  },
   "iFWLYC": {
     "message": "You can think of the deposit contract as a transfer of funds from an Ethereum account to a proof-of-stake validator account."
   },
@@ -2515,9 +2521,6 @@
   },
   "ntG2by": {
     "message": "Advanced system architecture"
-  },
-  "nwgrRp": {
-    "message": "Staking Launchpad for {TESTNET_LAUNCHPAD_NAME} testnet"
   },
   "nyOMKZ": {
     "message": "Execute with params"

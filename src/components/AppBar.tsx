@@ -207,7 +207,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                 margin="none"
                 className="bar-link-text no-padding"
               >
-                <Text color="white">
+                <Text color="white" size="20px" weight={800}>
                   <FormattedMessage
                     defaultMessage="JBC Staking Launchpad"
                     values={{
@@ -222,19 +222,19 @@ const _AppBar = ({ location }: RouteComponentProps) => {
         </HomeLink>
 
         <Link
-          to={routesEnum.acknowledgementPage}
+          to={routesEnum.uploadValidatorPage}
           className="secondary-link" // RTL
         >
           <BarLinkText
             level={4}
             margin="none"
             className="bar-link-text"
-            active={pathname === routesEnum.acknowledgementPage}
+            active={pathname === routesEnum.uploadValidatorPage}
           >
-            <Text color="white">Deposit</Text>
+            <Text color="#f5f5f5"> Get Started</Text>
           </BarLinkText>
         </Link>
-        {/* <ValidatorDropdown
+        <ValidatorDropdown
           className="secondary-link"
           label={
             <BarLinkText level={4} margin="none" active={isDropdownPage}>
@@ -269,7 +269,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
               </Box>
             </Box>
           }
-        /> */}
+        />
         {/* <Link to={routesEnum.checklistPage} className="secondary-link">
           <BarLinkText
             level={4}
@@ -329,79 +329,81 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             <Language color="white" />
           </Link>
         )} */}
-        {/* {mobile && (
+        {mobile && (
           <ValidatorDropdown
             className="secondary-link"
             label={<Menu color="white" />}
             dropAlign={{ top: 'bottom', right: dropAlignInline }}
             dropContent={
-              <Card>
-                <NetworkInfo>
-                  {walletConnected && (
-                    <DotBox>
-                      <Dot success={networkAllowed} error={!networkAllowed} />
-                      <Text size="small" color="white">
-                        {trimString(account as string, 10)}
-                      </Text>
-                    </DotBox>
-                  )}
-                  <span>
-                    <FormattedMessage defaultMessage="Launchpad network:" />{' '}
-                    <b>{consensusLayerName}</b>
-                  </span>
-                  <Link primary to={switchLaunchpadUrl}>
-                    <FormattedMessage
-                      defaultMessage="Switch to {oppositeNetwork} launchpad"
-                      values={{ oppositeNetwork }}
-                    />
-                  </Link>
-                  <Text className="mt20">
-                    <em>
-                      <FormattedMessage defaultMessage="Visit this site on desktop to become a validator." />
-                    </em>
-                  </Text>
-                </NetworkInfo>
-                <Box pad="large" className="mt0">
-                  <DropdownLink to={routesEnum.FaqPage}>
-                    <FormattedMessage defaultMessage="FAQ" />
-                  </DropdownLink>
-                  <DropdownLink to={routesEnum.checklistPage}>
-                    <FormattedMessage defaultMessage="Staker checklist" />
-                  </DropdownLink>
-                  <DropdownLink to={routesEnum.withdrawals}>
-                    <FormattedMessage defaultMessage="Withdrawals" />
-                  </DropdownLink>
-                  <DropdownLink to={routesEnum.languagesPage}>
-                    <FormattedMessage defaultMessage="Languages" />
-                  </DropdownLink>
-                  <Text className="my20">
-                    <b>
-                      <FormattedMessage defaultMessage="Execution clients" />
-                    </b>
-                  </Text>
-                  <DropdownLink to={routesEnum.besu}>Besu</DropdownLink>
-                  <DropdownLink to={routesEnum.erigon}>Erigon</DropdownLink>
-                  <DropdownLink to={routesEnum.geth}>Geth</DropdownLink>
-                  <DropdownLink to={routesEnum.nethermind}>
-                    Nethermind
-                  </DropdownLink>
-                  <Text className="my20">
-                    <b>
-                      <FormattedMessage defaultMessage="Consensus clients" />
-                    </b>
-                  </Text>
-                  <DropdownLink to={routesEnum.lighthouse}>
-                    Lighthouse
-                  </DropdownLink>
-                  <DropdownLink to={routesEnum.lodestar}>Lodestar</DropdownLink>
-                  <DropdownLink to={routesEnum.nimbus}>Nimbus</DropdownLink>
-                  <DropdownLink to={routesEnum.prysm}>Prysm</DropdownLink>
-                  <DropdownLink to={routesEnum.teku}>Teku</DropdownLink>
-                </Box>
-              </Card>
+              <></>
+
+              // <Card>
+              //   <NetworkInfo>
+              //     {walletConnected && (
+              //       <DotBox>
+              //         <Dot success={networkAllowed} error={!networkAllowed} />
+              //         <Text size="small" color="white">
+              //           {trimString(account as string, 10)}
+              //         </Text>
+              //       </DotBox>
+              //     )}
+              //     <span>
+              //       <FormattedMessage defaultMessage="Launchpad network:" />{' '}
+              //       <b>{consensusLayerName}</b>
+              //     </span>
+              //     <Link primary to={switchLaunchpadUrl}>
+              //       <FormattedMessage
+              //         defaultMessage="Switch to {oppositeNetwork} launchpad"
+              //         values={{ oppositeNetwork }}
+              //       />
+              //     </Link>
+              //     <Text className="mt20">
+              //       <em>
+              //         <FormattedMessage defaultMessage="Visit this site on desktop to become a validator." />
+              //       </em>
+              //     </Text>
+              //   </NetworkInfo>
+              //   <Box pad="large" className="mt0">
+              //     <DropdownLink to={routesEnum.FaqPage}>
+              //       <FormattedMessage defaultMessage="FAQ" />
+              //     </DropdownLink>
+              //     <DropdownLink to={routesEnum.checklistPage}>
+              //       <FormattedMessage defaultMessage="Staker checklist" />
+              //     </DropdownLink>
+              //     <DropdownLink to={routesEnum.withdrawals}>
+              //       <FormattedMessage defaultMessage="Withdrawals" />
+              //     </DropdownLink>
+              //     <DropdownLink to={routesEnum.languagesPage}>
+              //       <FormattedMessage defaultMessage="Languages" />
+              //     </DropdownLink>
+              //     <Text className="my20">
+              //       <b>
+              //         <FormattedMessage defaultMessage="Execution clients" />
+              //       </b>
+              //     </Text>
+              //     <DropdownLink to={routesEnum.besu}>Besu</DropdownLink>
+              //     <DropdownLink to={routesEnum.erigon}>Erigon</DropdownLink>
+              //     <DropdownLink to={routesEnum.geth}>Geth</DropdownLink>
+              //     <DropdownLink to={routesEnum.nethermind}>
+              //       Nethermind
+              //     </DropdownLink>
+              //     <Text className="my20">
+              //       <b>
+              //         <FormattedMessage defaultMessage="Consensus clients" />
+              //       </b>
+              //     </Text>
+              //     <DropdownLink to={routesEnum.lighthouse}>
+              //       Lighthouse
+              //     </DropdownLink>
+              //     <DropdownLink to={routesEnum.lodestar}>Lodestar</DropdownLink>
+              //     <DropdownLink to={routesEnum.nimbus}>Nimbus</DropdownLink>
+              //     <DropdownLink to={routesEnum.prysm}>Prysm</DropdownLink>
+              //     <DropdownLink to={routesEnum.teku}>Teku</DropdownLink>
+              //   </Box>
+              // </Card>
             }
           />
-        )} */}
+        )}
         {!mobile && (
           <ValidatorDropdown
             className="secondary-link"

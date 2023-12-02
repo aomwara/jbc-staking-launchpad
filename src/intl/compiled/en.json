@@ -3473,6 +3473,12 @@
       "value": "More on ConsenSys"
     }
   ],
+  "Oiy6J2": [
+    {
+      "type": 0,
+      "value": "Staking Launchpad for JBC Network"
+    }
+  ],
   "OmAmmi": [
     {
       "type": 0,
@@ -5771,6 +5777,12 @@
       "value": "validator"
     }
   ],
+  "iCpuph": [
+    {
+      "type": 0,
+      "value": "Clients"
+    }
+  ],
   "iFWLYC": [
     {
       "type": 0,
@@ -6561,20 +6573,6 @@
     {
       "type": 0,
       "value": "Advanced system architecture"
-    }
-  ],
-  "nwgrRp": [
-    {
-      "type": 0,
-      "value": "Staking Launchpad for "
-    },
-    {
-      "type": 1,
-      "value": "TESTNET_LAUNCHPAD_NAME"
-    },
-    {
-      "type": 0,
-      "value": " testnet"
     }
   ],
   "nyOMKZ": [
