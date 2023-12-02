@@ -103,6 +103,9 @@
   "00d8uq": {
     "message": "Once set up, your validator won't become active straight away. Use this time to complete the checklist and get some extra practice on a testnet."
   },
+  "01n3Gp": {
+    "message": "Become a validator and help secure the future of JIB Chain"
+  },
   "03xT/J": {
     "message": "The idea behind this is to minimize the losses from honest mistakes, but strongly disincentivize coordinated attacks."
   },
@@ -240,6 +243,10 @@
   "2AHkym": {
     "message": "There was an error loading your validator information from Beaconcha.in"
   },
+  "2B/Tpm": {
+    "description": "{network} inserts the testnet name, only if on the testnet",
+    "message": "JBC Staking Launchpad"
+  },
   "2CYEJa": {
     "message": "Troubleshooting"
   },
@@ -281,9 +288,6 @@
   },
   "38VH2G": {
     "message": "Install deposit-cli tool"
-  },
-  "39ZKg5": {
-    "message": "Withdrawals"
   },
   "3CRtg8": {
     "message": "You do not have enough {eth} in this account for {numberOfValidators} {validator}"
@@ -943,9 +947,6 @@
   },
   "GlKjxX": {
     "message": "You should see that you have one keystore per validator. This keystore contains your signing key, encrypted with your password."
-  },
-  "GsBRWL": {
-    "message": "Languages"
   },
   "Gsixxx": {
     "message": "Early adoption risks"
@@ -1988,9 +1989,6 @@
   "dM/KIM": {
     "message": "What exactly is a validator?"
   },
-  "dTOtPO": {
-    "message": "Top Up"
-  },
   "dVJcJt": {
     "message": "{stakingDepositCli}: This is done by using the “eth1 withdrawal address” ({eth1WithdrawalAddress}) flag when generating your keys with the Staking Deposit CLI."
   },
@@ -2225,10 +2223,6 @@
   },
   "iZuIgB": {
     "message": "Decompress the file you just downloaded"
-  },
-  "ie5fDg": {
-    "description": "{network} inserts the testnet name, only if on the testnet",
-    "message": "Staking Launchpad {network}"
   },
   "im7uMt": {
     "message": "Consensus Layer Validator Client (VC)"
@@ -2905,9 +2899,6 @@
   },
   "vEJDo8": {
     "message": "Protect your funds using monitoring software, and learn how to handle different real world scenarios."
-  },
-  "vIF140": {
-    "message": "Become a validator and help secure the future of Ethereum"
   },
   "vJez0K": {
     "message": "Proceed with caution. Our on-chain data source is down and we are unable to flag any double deposits."

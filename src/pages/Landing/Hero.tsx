@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 // @ts-ignore
 import Animate from 'animate.css-react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import LeslieTheRhinoPNG from '../../static/leslie-rhino.png';
+import JBCPNG from '../../static/jbc-badge.png';
 import { routesEnum } from '../../Routes';
 import { Heading } from '../../components/Heading';
 import { Text } from '../../components/Text';
@@ -20,10 +20,11 @@ interface mobile {
 
 const RainbowBackground = styled.div`
   min-width: 100%;
+  height: 90vh;
   overflow: hidden;
   background-image: ${p =>
     `radial-gradient(circle at 100% -80%, ${p.theme.rainbowLight})`};
-  min-height: ${(p: mobile) => p.isMobile && 'calc(100vh - 20px)'};
+  min-height: ${(p: mobile) => p.isMobile && '100vh'};
 `;
 const MainContainer = styled.div`
   max-width: ${p => p.theme.screenSizes.largest};
@@ -135,7 +136,7 @@ const LeslieImage: React.FC<{ style?: React.CSSProperties }> = ({ style }) => (
   <div>
     <ScrollAnimation animateIn="fadeIn" delay={750} animateOnce>
       <StyledLeslieImgNode
-        src={LeslieTheRhinoPNG}
+        src={JBCPNG}
         alt="Leslie the Rhino - Ethereum staking mascot"
         {...{ style }}
       />
@@ -184,7 +185,7 @@ export const Hero = () => {
                       color="brand"
                       className="my20"
                     >
-                      <FormattedMessage defaultMessage="Become a validator and help secure the future of Ethereum" />
+                      <FormattedMessage defaultMessage="Become a validator and help secure the future of JIB Chain" />
                     </Heading>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="fadeInUp" delay={750} animateOnce>
@@ -204,7 +205,6 @@ export const Hero = () => {
                         <Link to={routesEnum.uploadValidatorPage}>
                           <Button
                             fullWidth={m || isSmallScreen}
-                            rainbow
                             label={
                               m
                                 ? formatMessage({

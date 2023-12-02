@@ -279,6 +279,12 @@
       "value": "Once set up, your validator won't become active straight away. Use this time to complete the checklist and get some extra practice on a testnet."
     }
   ],
+  "01n3Gp": [
+    {
+      "type": 0,
+      "value": "Become a validator and help secure the future of JIB Chain"
+    }
+  ],
   "03xT/J": [
     {
       "type": 0,
@@ -629,6 +635,12 @@
       "value": "There was an error loading your validator information from Beaconcha.in"
     }
   ],
+  "2B/Tpm": [
+    {
+      "type": 0,
+      "value": "JBC Staking Launchpad"
+    }
+  ],
   "2CYEJa": [
     {
       "type": 0,
@@ -731,12 +743,6 @@
     {
       "type": 0,
       "value": "Install deposit-cli tool"
-    }
-  ],
-  "39ZKg5": [
-    {
-      "type": 0,
-      "value": "Withdrawals"
     }
   ],
   "3CRtg8": [
@@ -2487,12 +2493,6 @@
     {
       "type": 0,
       "value": "You should see that you have one keystore per validator. This keystore contains your signing key, encrypted with your password."
-    }
-  ],
-  "GsBRWL": [
-    {
-      "type": 0,
-      "value": "Languages"
     }
   ],
   "Gsixxx": [
@@ -5193,12 +5193,6 @@
       "value": "What exactly is a validator?"
     }
   ],
-  "dTOtPO": [
-    {
-      "type": 0,
-      "value": "Top Up"
-    }
-  ],
   "dVJcJt": [
     {
       "type": 1,
@@ -5871,16 +5865,6 @@
     {
       "type": 0,
       "value": "Decompress the file you just downloaded"
-    }
-  ],
-  "ie5fDg": [
-    {
-      "type": 0,
-      "value": "Staking Launchpad "
-    },
-    {
-      "type": 1,
-      "value": "network"
     }
   ],
   "im7uMt": [
@@ -7721,12 +7705,6 @@
     {
       "type": 0,
       "value": "Protect your funds using monitoring software, and learn how to handle different real world scenarios."
-    }
-  ],
-  "vIF140": [
-    {
-      "type": 0,
-      "value": "Become a validator and help secure the future of Ethereum"
     }
   ],
   "vJez0K": [

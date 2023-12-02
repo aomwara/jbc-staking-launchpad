@@ -35,7 +35,8 @@ const HomeLink = styled(Link)`
 `;
 
 const RainbowBackground = styled(Box)`
-  background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
+  background-image: linear-gradient(160deg, #2b3587, #131529 60%);
+  color: white;
 `;
 
 const EthLogo = styled.img`
@@ -56,7 +57,7 @@ const NetworkText = styled.div`
   &:hover {
     border-radius: 4px;
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
-    background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
+
     transition: transform 0.1s;
     transform: scale(1.02);
   }
@@ -197,7 +198,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
     >
       <NavBarLinks>
         <HomeLink to={routesEnum.landingPage}>
-          <EthLogo src={EthDiamond} alt="eth-diamond" />
+          {/* <EthLogo src={EthDiamond} alt="eth-diamond" /> */}
           {!mobile && (
             <div className="flex flex-column center">
               <BarLinkText
@@ -206,9 +207,9 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                 margin="none"
                 className="bar-link-text no-padding"
               >
-                <Text>
+                <Text color="white">
                   <FormattedMessage
-                    defaultMessage="Staking Launchpad {network}"
+                    defaultMessage="JBC Staking Launchpad"
                     values={{
                       network: IS_MAINNET ? '' : `(${NETWORK_NAME})`,
                     }}
@@ -230,7 +231,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             className="bar-link-text"
             active={pathname === routesEnum.acknowledgementPage}
           >
-            <FormattedMessage defaultMessage="Deposit" />
+            <Text color="white">Deposit</Text>
           </BarLinkText>
         </Link>
         {/* <ValidatorDropdown
@@ -269,7 +270,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             </Box>
           }
         /> */}
-        <Link to={routesEnum.checklistPage} className="secondary-link">
+        {/* <Link to={routesEnum.checklistPage} className="secondary-link">
           <BarLinkText
             level={4}
             margin="none"
@@ -278,8 +279,8 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           >
             <FormattedMessage defaultMessage="Checklist" />
           </BarLinkText>
-        </Link>
-        <Link to={routesEnum.FaqPage} className="secondary-link">
+        </Link> */}
+        {/* <Link to={routesEnum.FaqPage} className="secondary-link">
           <BarLinkText
             level={4}
             margin="none"
@@ -288,8 +289,8 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           >
             <FormattedMessage defaultMessage="FAQ" />
           </BarLinkText>
-        </Link>
-        <Link to={routesEnum.topUpPage} className="secondary-link">
+        </Link> */}
+        {/* <Link to={routesEnum.topUpPage} className="secondary-link">
           <BarLinkText
             level={4}
             margin="none"
@@ -298,8 +299,8 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           >
             <FormattedMessage defaultMessage="Top Up" />
           </BarLinkText>
-        </Link>
-        <Link to={routesEnum.withdrawals} className="mx10 secondary-link">
+        </Link> */}
+        {/* <Link to={routesEnum.withdrawals} className="mx10 secondary-link">
           <BarLinkText
             level={4}
             margin="none"
@@ -308,10 +309,10 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           >
             <FormattedMessage defaultMessage="Withdrawals" />
           </BarLinkText>
-        </Link>
+        </Link> */}
       </NavBarLinks>
       <NavLinksRight>
-        {!mobile && (
+        {/* {!mobile && (
           <Link to={routesEnum.languagesPage} className="secondary-link">
             <BarLinkText
               level={4}
@@ -322,16 +323,16 @@ const _AppBar = ({ location }: RouteComponentProps) => {
               <FormattedMessage defaultMessage="Languages" />
             </BarLinkText>
           </Link>
-        )}
-        {mobile && (
+        )} */}
+        {/* {mobile && (
           <Link to={routesEnum.languagesPage} className="mx10">
-            <Language color="black" />
+            <Language color="white" />
           </Link>
-        )}
+        )} */}
         {/* {mobile && (
           <ValidatorDropdown
             className="secondary-link"
-            label={<Menu color="black" />}
+            label={<Menu color="white" />}
             dropAlign={{ top: 'bottom', right: dropAlignInline }}
             dropContent={
               <Card>
@@ -339,7 +340,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                   {walletConnected && (
                     <DotBox>
                       <Dot success={networkAllowed} error={!networkAllowed} />
-                      <Text size="small" color="blueDark">
+                      <Text size="small" color="white">
                         {trimString(account as string, 10)}
                       </Text>
                     </DotBox>
@@ -406,27 +407,30 @@ const _AppBar = ({ location }: RouteComponentProps) => {
             className="secondary-link"
             label={
               <NetworkText>
-                {NETWORK_NAME}
+                <Text color="white" size="small">
+                  {NETWORK_NAME == 'Jbc' ? 'JBC Network' : NETWORK_NAME}
+                </Text>
                 <FormDown />
               </NetworkText>
             }
             dropAlign={{ top: 'bottom', right: dropAlignInline }}
             dropContent={
-              <Card>
-                {/* <Box pad="small" className="mt0">
-                  {!IS_MAINNET && (
-                    <Text className="mb10">
-                      <FormattedMessage defaultMessage="This is a test network ⚠️" />
-                    </Text>
-                  )}
-                  <DropdownLink to={switchLaunchpadUrl}>
-                    <FormattedMessage
-                      defaultMessage="Switch to {oppositeNetwork} launchpad"
-                      values={{ oppositeNetwork }}
-                    />
-                  </DropdownLink> */}
-                {/* </Box> */}
-              </Card>
+              // <Card>
+              //   <Box pad="small" className="mt0">
+              //     {!IS_MAINNET && (
+              //       <Text className="mb10">
+              //         <FormattedMessage defaultMessage="This is a test network ⚠️" />
+              //       </Text>
+              //     )}
+              //     <DropdownLink to={switchLaunchpadUrl}>
+              //       <FormattedMessage
+              //         defaultMessage="Switch to {oppositeNetwork} launchpad"
+              //         values={{ oppositeNetwork }}
+              //       />
+              //     </DropdownLink>
+              //   </Box>
+              // </Card>
+              <></>
             }
           />
         )}
@@ -462,7 +466,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                 }
               />
             )}
-            <Text size="small" color="blueDark">
+            <Text size="small" color="white">
               {trimString(account as string, 10)}
             </Text>
           </DotDropdownBox>

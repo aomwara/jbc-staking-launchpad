@@ -26,16 +26,17 @@ const StyledButton = styled(GrommetButton)`
   width: ${calculateWidth};
   font-size: 18px;
   letter-spacing: 1.5px;
-  background-color: ${p =>
-    p.primary ? p.theme.blue.dark : p.theme.gray.light};
+  color:white;
+  background-image: linear-gradient(160deg, #2b3587, #131529 60%);
   border: ${p => `1px solid ${p.theme.gray.medium}`};
-  &:hover {
-    border-radius: 4px;
-    box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
-    background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
-    transition: transform 0.1s;
-    transform: scale(1.02);
-  }
+  // &:hover {
+  //   border-radius: 4px;
+  //   box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
+  //   background-image: ${p =>
+    `linear-gradient(to right, ${p.theme.rainbow})`};
+  //   transition: transform 0.1s;
+  //   transform: scale(1.02);
+  // }
   // rainbow styles
   ${p =>
     // @ts-ignore
