@@ -335,9 +335,6 @@
   "3zWAPC": {
     "message": "you can always recalculate your signing key from your mnemonic"
   },
-  "4+3cIr": {
-    "message": "You've successfully set up a testnet validator! We recommend you complete the checklist before validating on {mainnet}"
-  },
   "40/5Sf": {
     "message": "Note that your {withdrawalCredentials} are not the same as your {feeRecipient}, which receives transaction fees from proposed blocks. These can both be set to the same address, but must each be set separately."
   },
@@ -692,9 +689,6 @@
   },
   "BQXsbH": {
     "message": "The key start index in EIP-2334"
-  },
-  "BUFaRV": {
-    "message": "EthStaker community"
   },
   "Bc20la": {
     "message": "days"
@@ -1173,9 +1167,6 @@
   },
   "Ljo9dF": {
     "message": "Bulgarian"
-  },
-  "LlClXS": {
-    "message": "Thank you for supporting the Ethereum network!"
   },
   "LpnfTF": {
     "message": "Lodestar installation documentation"
@@ -2363,6 +2354,9 @@
   "kv1nqx": {
     "message": "Exited"
   },
+  "kya+pj": {
+    "message": "You've successfully set up a testnet validator! We recommend you complete the checklist before validating on JBC Network"
+  },
   "l/uCcX": {
     "message": "You're on the testnet"
   },
@@ -2912,10 +2906,6 @@
   "vYOWYI": {
     "message": "Chinese (simplified)"
   },
-  "vbVsqW": {
-    "description": "{stakerChecklist} = 'Staker Checklist' bolded to draw attention",
-    "message": "Be sure to complete the {stakerChecklist} as soon as possible. And join the EthStaker community for support and discussion with fellow validators."
-  },
   "vz8WK7": {
     "message": "This occurs 256 epochs after the exit epoch, which takes ~27.3 hours."
   },
@@ -2974,9 +2964,6 @@
   },
   "xMOzv2": {
     "message": "Anyone wishing to conclude their staking obligations can sign a “voluntary exit” message which is then broadcast to the Beacon Chain to start the process. This is a manual step."
-  },
-  "xP6BKs": {
-    "message": "staker checklist"
   },
   "xQrU13": {
     "message": "Please review the staking checklist prior to proceeding. Use this as a guide to check off tasks as you complete validator setup."

@@ -317,7 +317,7 @@ const _CongratulationsPage = ({
             )}
             {!IS_MAINNET && (
               <FormattedMessage
-                defaultMessage="You've successfully set up a testnet validator! We recommend you complete the checklist before validating on {mainnet}"
+                defaultMessage="You've successfully set up a testnet validator! We recommend you complete the checklist before validating on JBC Network"
                 values={{
                   mainnet: (
                     <Link primary inline to={MAINNET_LAUNCHPAD_URL}>
@@ -345,7 +345,7 @@ const _CongratulationsPage = ({
                 </Heading>
                 <Text size="x-large" className="mt20">
                   <BoldGreen>
-                    {actualTxConfirmed * +PRICE_PER_VALIDATOR} {TICKER_NAME}
+                    {actualTxConfirmed * +PRICE_PER_VALIDATOR} JBC
                   </BoldGreen>
                 </Text>
               </Card>
@@ -484,7 +484,7 @@ const _CongratulationsPage = ({
               <KeyList />
             </div>
           )}
-          <ChecklistAlert>
+          {/* <ChecklistAlert>
             <Leslie />
             <div>
               <div className="flex">
@@ -528,7 +528,7 @@ const _CongratulationsPage = ({
                 </ButtonRow>
               </div>
             </div>
-          </ChecklistAlert>
+          </ChecklistAlert> */}
         </Content>
       </Gutter>
     </RainbowBackground>

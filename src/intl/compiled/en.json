@@ -907,16 +907,6 @@
       "value": "you can always recalculate your signing key from your mnemonic"
     }
   ],
-  "4+3cIr": [
-    {
-      "type": 0,
-      "value": "You've successfully set up a testnet validator! We recommend you complete the checklist before validating on "
-    },
-    {
-      "type": 1,
-      "value": "mainnet"
-    }
-  ],
   "40/5Sf": [
     {
       "type": 0,
@@ -1875,12 +1865,6 @@
     {
       "type": 0,
       "value": "The key start index in EIP-2334"
-    }
-  ],
-  "BUFaRV": [
-    {
-      "type": 0,
-      "value": "EthStaker community"
     }
   ],
   "Bc20la": [
@@ -3029,12 +3013,6 @@
     {
       "type": 0,
       "value": "Bulgarian"
-    }
-  ],
-  "LlClXS": [
-    {
-      "type": 0,
-      "value": "Thank you for supporting the Ethereum network!"
     }
   ],
   "LpnfTF": [
@@ -6179,6 +6157,12 @@
       "value": "Exited"
     }
   ],
+  "kya+pj": [
+    {
+      "type": 0,
+      "value": "You've successfully set up a testnet validator! We recommend you complete the checklist before validating on JBC Network"
+    }
+  ],
   "l/uCcX": [
     {
       "type": 0,
@@ -7699,20 +7683,6 @@
       "value": "Chinese (simplified)"
     }
   ],
-  "vbVsqW": [
-    {
-      "type": 0,
-      "value": "Be sure to complete the "
-    },
-    {
-      "type": 1,
-      "value": "stakerChecklist"
-    },
-    {
-      "type": 0,
-      "value": " as soon as possible. And join the EthStaker community for support and discussion with fellow validators."
-    }
-  ],
   "vz8WK7": [
     {
       "type": 0,
@@ -7833,12 +7803,6 @@
     {
       "type": 0,
       "value": "Anyone wishing to conclude their staking obligations can sign a “voluntary exit” message which is then broadcast to the Beacon Chain to start the process. This is a manual step."
-    }
-  ],
-  "xP6BKs": [
-    {
-      "type": 0,
-      "value": "staker checklist"
     }
   ],
   "xQrU13": [
